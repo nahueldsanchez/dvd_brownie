@@ -6,8 +6,18 @@ worring about also learning Javascript. It was also a good execuse for me to sta
 playing with Brownie, a Python-based development framework for the EVM created by
 [Ben Hauser (iamdefinitelyhuman)](https://github.com/eth-brownie/brownie)
 
-I "ported" Martin's exercises to Brownie. This allowed me to solve them (so far 1 to 4),
+I "ported" Martin's exercises to Brownie. This allowed me to solve them (so far 1 to 5),
 while at the same time learning about Brownie and its inner workings.
+
+You can use this repository to solve the following challenges:
+
+1. [Unstoppable](https://github.com/nahueldsanchez/dvd_brownie/tree/master/unstoppable)
+2. [Naive receiver](https://github.com/nahueldsanchez/dvd_brownie/tree/master/naive-receiver)
+3. [Truster](https://github.com/nahueldsanchez/dvd_brownie/tree/master/truster)
+4. [Side Entrance](https://github.com/nahueldsanchez/dvd_brownie/tree/master/side-entrance)
+5. [The Rewarder](https://github.com/nahueldsanchez/dvd_brownie/tree/master/the-rewarder)
+
+I'll continue porting the rest of the challenges once I'm able to solve them.
 
 ## How to use this project
 
