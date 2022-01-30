@@ -77,4 +77,4 @@ You can find my solutions in my Blog, links below:
 
 - [Challenges Unstoppable and Naive Receiver](https://nahueldsanchez.com.ar/Solving-DVDChallenges-1-2/)
 - [Challenges Truster and Side Entrance](https://nahueldsanchez.com.ar/Solving-DVDChallenges-3-4/)
-- [Challenges The rewarder and Naive](ttps://nahueldsanchez.com.ar/Solving-DVDChallenges-5-6)
+- [Challenges The rewarder and Selfie](ttps://nahueldsanchez.com.ar/Solving-DVDChallenges-5-6)
