@@ -16,6 +16,7 @@ You can use this repository to solve the following challenges:
 3. [Truster](https://github.com/nahueldsanchez/dvd_brownie/tree/master/truster)
 4. [Side Entrance](https://github.com/nahueldsanchez/dvd_brownie/tree/master/side-entrance)
 5. [The Rewarder](https://github.com/nahueldsanchez/dvd_brownie/tree/master/the-rewarder)
+6. [Selfie](https://github.com/nahueldsanchez/dvd_brownie/tree/master/selfie)
 
 I'll continue porting the rest of the challenges once I'm able to solve them.
 
@@ -69,3 +70,11 @@ solution_
 5) Write your solution in the `test_solution` placeholder that I left.
 6) Test your solution runing the tests, with `brownie test -k test_solution`. If the
 solution is correct, test should pass.
+
+## Blog posts and solutions
+
+You can find my solutions in my Blog, links below:
+
+- [Challenges Unstoppable and Naive Receiver](https://nahueldsanchez.com.ar/Solving-DVDChallenges-1-2/)
+- [Challenges Truster and Side Entrance](https://nahueldsanchez.com.ar/Solving-DVDChallenges-3-4/)
+- [Challenges The rewarder and Naive](ttps://nahueldsanchez.com.ar/Solving-DVDChallenges-5-6)
