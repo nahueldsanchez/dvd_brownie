@@ -17,6 +17,7 @@ You can use this repository to solve the following challenges:
 4. [Side Entrance](https://github.com/nahueldsanchez/dvd_brownie/tree/master/side-entrance)
 5. [The Rewarder](https://github.com/nahueldsanchez/dvd_brownie/tree/master/the-rewarder)
 6. [Selfie](https://github.com/nahueldsanchez/dvd_brownie/tree/master/selfie)
+7. [Compromised](https://github.com/nahueldsanchez/dvd_brownie/tree/master/compromised)
 
 I'll continue porting the rest of the challenges once I'm able to solve them.
 
