@@ -18,6 +18,7 @@ You can use this repository to solve the following challenges:
 5. [The Rewarder](https://github.com/nahueldsanchez/dvd_brownie/tree/master/the-rewarder)
 6. [Selfie](https://github.com/nahueldsanchez/dvd_brownie/tree/master/selfie)
 7. [Compromised](https://github.com/nahueldsanchez/dvd_brownie/tree/master/compromised)
+8. [Puppet](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet)
 
 I'll continue porting the rest of the challenges once I'm able to solve them.
 
