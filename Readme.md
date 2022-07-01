@@ -1,6 +1,6 @@
 # Damn Vulnerable Defi Brownie version
 
-This project solely goal is to allow people that wants to learn about Smart Contracts
+This projects sole goal is to allow people that want to learn about Smart Contracts
 Security through solving OpenZeppelin's challenges created by [@tinchoabbate](https://twitter.com/tinchoabbate) [https://www.damnvulnerabledefi.xyz/](https://www.damnvulnerabledefi.xyz/), without
 worring about also learning Javascript. It was also a good execuse for me to start
 playing with Brownie, a Python-based development framework for the EVM created by
@@ -30,8 +30,8 @@ learning about all of this.
 The idea is to leverage Brownie's flexibility in its testing suite and use it to test
 our solutions for the challenges. Every challenge follows the same idea:
 
-I created a test file called `<challenge_name>_test.py` that has a test called
-`test_solution`. In this test, after setting up the scenario (that's already done)
+I created a test file called `<challenge_name>_test.py` that has a function called
+`test_solution`. In this test, after setting up the scenario (see section below for more details)
 you can write your solution, for example, let's see the test for `truster` challenge:
 
 ```Python
@@ -48,30 +48,49 @@ def test_solution():
     assert damn_valuable_token.balanceOf(truster_lender_pool) == 0
 ```
 
-As you can see, the scenario is set up and after that you can write your solution.
+The first step is to set up the scenario (again see below section for more details),
+ after that you can write your solution within the test_solution() function in the test.py file.
 the assertions at the end ensure that you have correctly solved the challenge.
 
 For the challenges that I solved I included an `exploit.py` under the `scripts`
-folder that contains code used for solving the challenge (don't read it before
+folder that contains code used for solving the challenge (this is a spoiler, don't read it before
 thinking about the problem). The same applies for contracts named `AttackerContract`.
 These are part of the solution, don't spoil yourself.
 
 ## Quick Start
 
-0) Install Brownie in a virtual environment and activate it.
+0) Install Brownie in a virtual environment and activate it. The best way to do this is to follow this 
+guide: https://iamdefinitelyahuman.medium.com/getting-started-with-brownie-part-1-9b2181f4cb99 - note that you will need dependencies including ganache-cli through node/npm
+(that will really be the only piece of JS you'll need)
+The brownie install docs are very helpful for this as well: https://eth-brownie.readthedocs.io/en/stable/install.html
 1) Clone this repository. You'll find different folders for each challenge.
 2) Each of these folders is a different Brownie project.
 3) Change directory to the challenge you want to solve. For example, truster.
-4) You can run `brownie test` to run all test. For most of the challenges I kept
+4) If you'd like to interact with the contract, run the deploy.py setupscenario script. See section below for more information.
+5) You can run `brownie test` to run all test. For most of the challenges I kept
 the same tests that Martin created to check that the scenario is properly setup.
 Your solution has to be implemented or called from the `test_solution` test.
 
 _Note: you can use `brownie test -k test_solution` to run only the test with the
 solution_
 
-5) Write your solution in the `test_solution` placeholder that I left.
-6) Test your solution runing the tests, with `brownie test -k test_solution`. If the
+6) Write your solution in the `test_solution` placeholder that I left.
+7) Test your solution runing the tests, with `brownie test -k test_solution`. If the
 solution is correct, test should pass.
+
+## Setting up the Scenario 
+To do this, we'll want to run the deploy.py script contained in the "scripts" folder. The way to do this is as follows:
+0) Create a "__init__.py file inside the scripts folder if it is not already there
+1) Run command "brownie console" (ensure the dependencies are all installed - follow the links above in the Quick Start for more info)
+2) execute "from scripts.deploy import scenario_setup" (where scenario_setup() is the name of the function)
+3) Now you can call "scenario_setup()" which returns the contracts
+4) You can now interact with the contract(s) via the brownie-cli; the contracts will have the same methods and functions to interact with as you see in the code itself
+
+Please note that all of the steps above are to be able to interact with the exercise via the brownie console. If you only want to code your solution and test
+it you can do as described above:
+
+1) Write your solution in the file "test_solution.py" inside "tests"
+2) Test it running: "brownie test -k test_solution"
 
 ## Blog posts and solutions
 
