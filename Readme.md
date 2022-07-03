@@ -60,9 +60,11 @@ These are part of the solution, don't spoil yourself.
 ## Quick Start
 
 0) Install Brownie in a virtual environment and activate it. The best way to do this is to follow this 
-guide: https://iamdefinitelyahuman.medium.com/getting-started-with-brownie-part-1-9b2181f4cb99 - note that you will need dependencies including ganache-cli through node/npm
-(that will really be the only piece of JS you'll need)
+guide: https://iamdefinitelyahuman.medium.com/getting-started-with-brownie-part-1-9b2181f4cb99
+
+_Note:_ that you will need dependencies including ganache-cli through node/npm (that will really be the only piece of JS you'll need)
 The brownie install docs are very helpful for this as well: https://eth-brownie.readthedocs.io/en/stable/install.html
+
 1) Clone this repository. You'll find different folders for each challenge.
 2) Each of these folders is a different Brownie project.
 3) Change directory to the challenge you want to solve. For example, truster.
@@ -80,7 +82,8 @@ solution is correct, test should pass.
 
 ## Setting up the Scenario 
 To do this, we'll want to run the deploy.py script contained in the "scripts" folder. The way to do this is as follows:
-0) Create a "__init__.py file inside the scripts folder if it is not already there
+
+0) Create a "\_\_init\_\_.py" file inside the scripts folder if it is not already there
 1) Run command "brownie console" (ensure the dependencies are all installed - follow the links above in the Quick Start for more info)
 2) execute "from scripts.deploy import scenario_setup" (where scenario_setup() is the name of the function)
 3) Now you can call "scenario_setup()" which returns the contracts
@@ -98,4 +101,6 @@ You can find my solutions in my Blog, links below:
 
 - [Challenges Unstoppable and Naive Receiver](https://nahueldsanchez.com.ar/Solving-DVDChallenges-1-2/)
 - [Challenges Truster and Side Entrance](https://nahueldsanchez.com.ar/Solving-DVDChallenges-3-4/)
-- [Challenges The rewarder and Selfie](ttps://nahueldsanchez.com.ar/Solving-DVDChallenges-5-6)
+- [Challenges The rewarder and Selfie](https://nahueldsanchez.com.ar/Solving-DVDChallenges-5-6)
+- [Challenge Compromised](https://nahueldsanchez.com.ar/Solving-DVDChallenges-7/)
+- [Challenge Puppet](https://nahueldsanchez.com.ar/Solving-DVDChallenges-8/)
