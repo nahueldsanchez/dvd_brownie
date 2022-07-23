@@ -30,7 +30,7 @@ def deploy_bytecode(contract_abi, contract_bytecode):
     temp_contract = w3_client.eth.contract(abi=contract_abi, bytecode=contract_bytecode)
     n = w3_client.eth.get_transaction_count(RANDOM_ADDRESS)
     tx = temp_contract.constructor().buildTransaction(
-        {'from': RANDOM_ADDRESS, 'nonce': n}
+        {'from': RANDOM_ADDRESS, 'nonce': n, 'gasPrice': w3_client.eth.gas_price}
     )
     signed_tx = w3_client.eth.account.sign_transaction(tx, private_key=RANDOM_ADDRESS_PK)
 
