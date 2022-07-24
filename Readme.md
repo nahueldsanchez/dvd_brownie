@@ -6,8 +6,7 @@ worring about also learning Javascript. It was also a good execuse for me to sta
 playing with Brownie, a Python-based development framework for the EVM created by
 [Ben Hauser (iamdefinitelyhuman)](https://github.com/eth-brownie/brownie)
 
-I "ported" Martin's exercises to Brownie. This allowed me to solve them (so far 1 to 5),
-while at the same time learning about Brownie and its inner workings.
+I "ported" Martin's exercises to Brownie. This allowed me to solve them, while at the same time learning about Brownie and its inner workings.
 
 You can use this repository to solve the following challenges:
 
@@ -19,6 +18,7 @@ You can use this repository to solve the following challenges:
 6. [Selfie](https://github.com/nahueldsanchez/dvd_brownie/tree/master/selfie)
 7. [Compromised](https://github.com/nahueldsanchez/dvd_brownie/tree/master/compromised)
 8. [Puppet](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet)
+9. [Puppet v2](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet-v2)
 
 I'll continue porting the rest of the challenges once I'm able to solve them.
 
@@ -68,7 +68,7 @@ The brownie install docs are very helpful for this as well: https://eth-brownie.
 1) Clone this repository. You'll find different folders for each challenge.
 2) Each of these folders is a different Brownie project.
 3) Change directory to the challenge you want to solve. For example, truster.
-4) If you'd like to interact with the contract, run the deploy.py setupscenario script. See section below for more information.
+4) If you'd like to interact with the contract, run the deploy.py setup scenario script. See section below for more information.
 5) You can run `brownie test` to run all test. For most of the challenges I kept
 the same tests that Martin created to check that the scenario is properly setup.
 Your solution has to be implemented or called from the `test_solution` test.
@@ -77,7 +77,7 @@ _Note: you can use `brownie test -k test_solution` to run only the test with the
 solution_
 
 6) Write your solution in the `test_solution` placeholder that I left.
-7) Test your solution runing the tests, with `brownie test -k test_solution`. If the
+7) Test your solution running the tests, with `brownie test -k test_solution`. If the
 solution is correct, test should pass.
 
 ## Setting up the Scenario 
@@ -104,3 +104,4 @@ You can find my solutions in my Blog, links below:
 - [Challenges The rewarder and Selfie](https://nahueldsanchez.com.ar/Solving-DVDChallenges-5-6)
 - [Challenge Compromised](https://nahueldsanchez.com.ar/Solving-DVDChallenges-7/)
 - [Challenge Puppet](https://nahueldsanchez.com.ar/Solving-DVDChallenges-8/)
+- [Challenge Puppet v2](https://nahueldsanchez.com.ar/Solving-DVDChallenges-9/)
