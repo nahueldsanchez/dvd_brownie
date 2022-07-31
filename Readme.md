@@ -19,6 +19,7 @@ You can use this repository to solve the following challenges:
 7. [Compromised](https://github.com/nahueldsanchez/dvd_brownie/tree/master/compromised)
 8. [Puppet](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet)
 9. [Puppet v2](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet-v2)
+10. [Free Rider](https://github.com/nahueldsanchez/dvd_brownie/tree/master/free-rider)
 
 I'll continue porting the rest of the challenges once I'm able to solve them.
 
@@ -105,3 +106,4 @@ You can find my solutions in my Blog, links below:
 - [Challenge Compromised](https://nahueldsanchez.com.ar/Solving-DVDChallenges-7/)
 - [Challenge Puppet](https://nahueldsanchez.com.ar/Solving-DVDChallenges-8/)
 - [Challenge Puppet v2](https://nahueldsanchez.com.ar/Solving-DVDChallenges-9/)
+- [Challenge Free Rider](https://nahueldsanchez.com.ar/Solving-DVDChallenges-10/)
