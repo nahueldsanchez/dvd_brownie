@@ -9,9 +9,9 @@ FIXED_FEE = '1 ether'
 def test_scenario_setup():
     naive_pool, naive_receiver = scenario_setup()
 
-    assert naive_pool.balance() == ETHER_IN_POOL
+    assert naive_pool.balance() == Web3.toWei(ETHER_IN_POOL, 'ether')
     assert naive_pool.fixedFee() == FIXED_FEE
-    assert naive_receiver.balance() == ETHER_IN_RECEIVER
+    assert naive_receiver.balance() == Web3.toWei(ETHER_IN_RECEIVER, 'ether')
 
 def test_solution():
     naive_pool, naive_receiver = scenario_setup()
