@@ -1,4 +1,4 @@
-from brownie import ReceiverUnstoppable
+import brownie
 from scripts.deployer import (INITIAL_ATTACKER_TOKEN_BALANCE, TOKENS_IN_POOL,
                               scenario_setup)
 from scripts.exploit import exploit
@@ -18,7 +18,7 @@ def test_scenario_setup(accounts):
 
 def test_unstoppable_pool_flashloans_work(accounts):
     unstoppable_pool, _ = scenario_setup()
-    receiver_unstoppable = ReceiverUnstoppable.deploy(
+    receiver_unstoppable = brownie.ReceiverUnstoppable.deploy(
         unstoppable_pool.address, {'from': accounts[0]})
     tx = receiver_unstoppable.executeFlashLoan(10)
     assert tx
@@ -26,7 +26,7 @@ def test_unstoppable_pool_flashloans_work(accounts):
 
 def test_solution(accounts):
     unstoppable_pool, damn_valuable_token = scenario_setup()
-    receiver_unstoppable = ReceiverUnstoppable.deploy(
+    receiver_unstoppable = brownie.ReceiverUnstoppable.deploy(
         unstoppable_pool.address, {'from': accounts[0]})
     
     attacker = accounts[1]
