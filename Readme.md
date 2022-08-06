@@ -20,8 +20,21 @@ You can use this repository to solve the following challenges:
 8. [Puppet](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet)
 9. [Puppet v2](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet-v2)
 10. [Free Rider](https://github.com/nahueldsanchez/dvd_brownie/tree/master/free-rider)
+11. [Backdoor](https://github.com/nahueldsanchez/dvd_brownie/tree/master/backdoor)
 
-I'll continue porting the rest of the challenges once I'm able to solve them.
+## Special changes needed to make certain levels work
+
+### Challenge 11 - Backdoor
+
+To be able to port challenge 11 I had to modify part of the source code of Gnosis Safe project, specifically remove the enforcement of Solidity compiler version from the following files:
+
+1. packages/safe-global/safe-contracts@1.3.0-libs.0/contracts/interfaces/ViewStorageAccessible.sol comment out Solidity pragma
+2. packages/safe-global/safe-contracts@1.3.0-libs.0/contracts/test/ERC20Token.sol comment out Solidity pragma
+
+Also I needed to include project `mock-contract` into `safe-contracts` project folder:
+
+- Download https://github.com/gnosis/mock-contract/tree/master and save it into packages/safe-global/safe-contracts@1.3.0-libs.0/
+
 
 ## How to use this project
 
@@ -107,3 +120,4 @@ You can find my solutions in my Blog, links below:
 - [Challenge Puppet](https://nahueldsanchez.com.ar/Solving-DVDChallenges-8/)
 - [Challenge Puppet v2](https://nahueldsanchez.com.ar/Solving-DVDChallenges-9/)
 - [Challenge Free Rider](https://nahueldsanchez.com.ar/Solving-DVDChallenges-10/)
+- [Challenge Backdoor](https://nahueldsanchez.com.ar/Solving-DVDChallenges-11/)
