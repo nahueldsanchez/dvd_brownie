@@ -26,7 +26,7 @@ You can use this repository to solve the following challenges:
 
 ### Challenge 11 - Backdoor
 
-To be able to port challenge 11 I had to modify part of the source code of Gnosis Safe project, specifically remove the enforcement of Solidity compiler version from the following files:
+To be able to port challenge 11 I had to modify part of the source code of Gnosis Safe project that's saved on Brownie's packages folder (/home/<user>/.brownie/packages/), specifically remove the enforcement of Solidity compiler version from the following files:
 
 1. packages/safe-global/safe-contracts@1.3.0-libs.0/contracts/interfaces/ViewStorageAccessible.sol comment out Solidity pragma
 2. packages/safe-global/safe-contracts@1.3.0-libs.0/contracts/test/ERC20Token.sol comment out Solidity pragma
