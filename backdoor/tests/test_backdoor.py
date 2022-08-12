@@ -4,7 +4,7 @@ from brownie import ZERO_ADDRESS
 
 
 def test_solution():
-    master_copy, wallet_registry, wallet_factory, gnosis_safe_project, dvt, attacker, alice, bob, charlie, david = scenario_setup()
+    master_copy, wallet_registry, wallet_factory, dvt, attacker, alice, bob, charlie, david = scenario_setup()
     victims = [alice, bob, charlie, david]
     # Solution goes here
     # Write your exploit
