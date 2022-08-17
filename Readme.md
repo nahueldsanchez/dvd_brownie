@@ -21,12 +21,13 @@ You can use this repository to solve the following challenges:
 9. [Puppet v2](https://github.com/nahueldsanchez/dvd_brownie/tree/master/puppet-v2)
 10. [Free Rider](https://github.com/nahueldsanchez/dvd_brownie/tree/master/free-rider)
 11. [Backdoor](https://github.com/nahueldsanchez/dvd_brownie/tree/master/backdoor)
+12. [Climber](https://github.com/nahueldsanchez/dvd_brownie/tree/master/climber)
 
 ## Special changes needed to make certain levels work
 
 ### Challenge 11 - Backdoor
 
-To be able to port challenge 11 I had to modify part of the source code of Gnosis Safe project that's saved on Brownie's packages folder (/home/<user>/.brownie/packages/), specifically remove the enforcement of Solidity compiler version from the following files:
+To be able to port challenge 11 I had to modify part of the source code of Gnosis Safe project that's saved on Brownie's packages folder (`/home/user/.brownie/packages/`), specifically remove the enforcement of Solidity compiler version from the following files:
 
 1. packages/safe-global/safe-contracts@1.3.0-libs.0/contracts/interfaces/ViewStorageAccessible.sol comment out Solidity pragma
 2. packages/safe-global/safe-contracts@1.3.0-libs.0/contracts/test/ERC20Token.sol comment out Solidity pragma
@@ -121,3 +122,4 @@ You can find my solutions in my Blog, links below:
 - [Challenge Puppet v2](https://nahueldsanchez.com.ar/Solving-DVDChallenges-9/)
 - [Challenge Free Rider](https://nahueldsanchez.com.ar/Solving-DVDChallenges-10/)
 - [Challenge Backdoor](https://nahueldsanchez.com.ar/Solving-DVDChallenges-11/)
+- [Challenge Climber](https://nahueldsanchez.com.ar/Solving-DVDChallenges-12/)
